@@ -1,0 +1,13 @@
+import HautevilleHouse.BilinearHermitianFormsCanonicalLaneLean.AdmissibleClass
+import HautevilleHouse.BilinearHermitianFormsCanonicalLaneLean.BridgeLemmas
+import HautevilleHouse.BilinearHermitianFormsCanonicalLaneLean.GateLemmas
+import HautevilleHouse.BilinearHermitianFormsCanonicalLaneLean.HermitianFormLayer
+import HautevilleHouse.BilinearHermitianFormsCanonicalLaneLean.FinalTheorem
+
+namespace HautevilleHouse
+namespace BilinearHermitianFormsCanonicalLaneLean
+
+-- Root module: all submodules imported
+
+end BilinearHermitianFormsCanonicalLaneLean
+end HautevilleHouse

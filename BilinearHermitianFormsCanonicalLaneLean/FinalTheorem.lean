@@ -1,0 +1,17 @@
+import canonicalLaneMathlib.AdmissibleClass
+import HautevilleHouse.BilinearHermitianFormsCanonicalLaneLean.AdmissibleHermitianClass
+import HautevilleHouse.BilinearHermitianFormsCanonicalLaneLean.DiagonalizationLayer
+import HautevilleHouse.BilinearHermitianFormsCanonicalLaneLean.SignaturePersistenceLayer
+import HautevilleHouse.BilinearHermitianFormsCanonicalLaneLean.PolarizationBridge
+
+namespace HautevilleHouse
+namespace BilinearHermitianFormsCanonicalLaneLean
+
+def ConstrainedHermitianClosure (A : AdmissibleHermitianClass) : Prop :=
+  bridgeClosed A ∧ gateClosed A ∧ DiagonalizationLayerClosed (default) ∧ SignaturePersistenceClosed (default) ∧ PolarizationBridgeClosed (default)
+
+theorem constrained_hermitian_endgame (A : AdmissibleHermitianClass) : ConstrainedHermitianClosure A :=
+  ⟨bridge_from_admissible_class A, gate_from_admissible_class A, diagonalization_layer_closed_checked, signature_persistence_closed_checked, polarization_bridge_closed_checked⟩
+
+end BilinearHermitianFormsCanonicalLaneLean
+end HautevilleHouse
